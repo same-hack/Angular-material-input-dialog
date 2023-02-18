@@ -1,0 +1,7 @@
+<p>{{ data.title }}を入力してください</p>
+<div>
+  <!-- [mat-dialog-close]に渡した値を呼び出し元に返す -->
+  <input type="text" [(ngModel)]="myText" />
+  <button [mat-dialog-close]="myText">OK</button>
+  <button (click)="cancel()" cdkFocusInitial>キャンセル</button>
+</div>
